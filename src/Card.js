@@ -1,10 +1,11 @@
 import React from 'react';
-import 'tachyons'; 
+import './Card.css';
+//import 'tachyons'; 
 
 function Card({id,name,email}){
 	console.log(id);
 	return(
-		<div className="bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5 tc">
+		<div className="bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5 tc card">
 			<img alt = 'robophoto' src={`https://robohash.org/robo${id}?`} width="200px" height="200px" />
 			<div>
 				<h1>{name}</h1>

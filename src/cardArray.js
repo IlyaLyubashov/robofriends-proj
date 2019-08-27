@@ -1,10 +1,10 @@
 import React from 'react';
 import Card from './Card';
-import robots from './robots';
 
-function CardArray() {
+
+function CardArray({robots}) {
 	return (
-		<div>
+		<div className = 'ma5'>
 			{robots.map((el) => {
 				return <Card name={el.name} email = {el.email} key ={el.id} id = {el.id}/>
 			})}
